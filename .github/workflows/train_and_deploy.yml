@@ -21,7 +21,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install -r requirements.txt
+          
           pip install mlflow pandas numpy scikit-learn streamlit python-dotenv
 
       - name: Load Environment Variables

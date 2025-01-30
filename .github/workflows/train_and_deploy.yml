@@ -1,0 +1,50 @@
+name: ML Model Prediction & Deployment
+
+on:
+  push:
+    branches:
+      - main  # Runs when code is pushed to main
+  pull_request:
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install mlflow pandas numpy scikit-learn streamlit python-dotenv nbconvert
+
+      - name: Convert Jupyter Notebook to Python Script
+        run: jupyter nbconvert --to script model_with_MLFlow.ipynb
+
+      - name: Load Environment Variables
+        run: echo "MLFLOW_MODEL_URI=${{ secrets.MODEL_URI }}" >> .env
+
+      - name: Run Model Prediction
+        run: python model_with_MLFlow.py
+
+      - name: Upload Predictions as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: predicted-risks
+          path: predicted_risks.csv
+
+  deploy:
+    needs: predict
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy Streamlit App
+        run: |
+          pip install streamlit
+          streamlit run streamlit_with_mlflow.py --server.port 8501

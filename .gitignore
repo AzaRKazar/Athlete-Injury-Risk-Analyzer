@@ -1,3 +1,5 @@
 .env
 *.pkl
 data/
+mlruns/
+trained-models/

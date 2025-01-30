@@ -2,6 +2,7 @@ import os
 import mlflow.pyfunc
 import pandas as pd
 
+
 # Get model URI from environment variable
 model_uri = os.getenv("model_uri")
 
@@ -13,7 +14,7 @@ best_model = mlflow.pyfunc.load_model(model_uri)
 print(f"Using registered model from: {model_uri}")
 
 # Load unseen data and predict
-unseen_data = pd.read_csv("unseen_athlete_data.csv")
+unseen_data = pd.read_csv("data/unseen_athlete.csv")
 X_unseen = unseen_data[['ForceSymmetry', 'MaxForceSymmetry', 'TorqueSymmetry']]
 predictions = best_model.predict(X_unseen)
 

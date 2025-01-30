@@ -25,7 +25,7 @@ jobs:
           pip install mlflow pandas numpy scikit-learn streamlit python-dotenv
 
       - name: Load Environment Variables
-        run: echo "model_uri=${{ secrets.MODEL_URI }}" >> model_uri.txt
+        run: echo "model_uri=${{ secrets.MODEL_URI }}" >> $GITHUB_ENV
 
       - name: Run Model Prediction
         run: python model_with_MLFlow.py

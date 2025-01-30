@@ -4,7 +4,7 @@ import pandas as pd
 
 
 # Get model URI from environment variable
-model_uri = os.getenv("model_uri")
+model_uri = os.getenv("model_uri","models:/RF_SMOTEENN/Version 1")
 
 if model_uri is None:
     raise ValueError("MLFLOW_MODEL_URI is not set! Please pass it as an argument or set it in GitHub Secrets.")

@@ -4,7 +4,7 @@ import numpy as np
 import mlflow.pyfunc
 
 # Load the best model from MLflow
-model_uri = 'runs:/7429131a01464de68dc4aa191c18bcd3/RF_SMOTEENN'
+model_uri = 'runs:/46a33f800e154add9cd9d63f78164ac2/RF_SMOTEENN'
 best_model = mlflow.pyfunc.load_model(model_uri)
 
 # Risk Mapping

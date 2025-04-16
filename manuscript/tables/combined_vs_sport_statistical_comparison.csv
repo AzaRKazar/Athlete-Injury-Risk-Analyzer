@@ -1,0 +1,15 @@
+Comparison,Combined F1,Mean Sport F1,Std Sport F1,Z-Score,P-Value,Significant,Sport F1,Absolute Difference,Percentage Difference,Combined Better
+Combined vs. Average Sport-Specific,1.0,0.9909502262443439,0.021223600723182943,0.4264014327112193,0.6698153575994177,False,,,,
+Combined vs. combined,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. football,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. womes lax,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. mens soccer,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. womens soccer,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. womens basketball,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. mens lax,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. baseball,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. mens basketball,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. womens volleyball,1.0,,,,,,0.9411764705882353,0.05882352941176472,6.250000000000002,True
+Combined vs. softball,1.0,,,,,,0.9411764705882353,0.05882352941176472,6.250000000000002,True
+Combined vs. track and field,1.0,,,,,,1.0,0.0,0.0,False
+Combined vs. tennis,1.0,,,,,,1.0,0.0,0.0,False

@@ -1,0 +1,57 @@
+Model Type,Sport,F1,Accuracy,ROC AUC,Sample Size
+RF_No_Balancing,All Combined,1.0,1.0,1.0,6372
+RF_with_SMOTE,All Combined,1.0,1.0,1.0,6372
+RF_with_SMOTEENN,All Combined,0.9981203007518797,0.9984313725490196,0.9999683933186004,6372
+RF_with_Class_Weights,All Combined,1.0,1.0,1.0,6372
+RF_No_Balancing,combined,1.0,1.0,1.0,3186
+RF_with_SMOTE,combined,1.0,1.0,1.0,3186
+RF_with_SMOTEENN,combined,0.996268656716418,0.9968652037617555,0.9999999999999999,3186
+RF_with_Class_Weights,combined,1.0,1.0,1.0,3186
+RF_No_Balancing,football,1.0,1.0,1.0,972
+RF_with_SMOTE,football,1.0,1.0,1.0,972
+RF_with_SMOTEENN,football,0.9554140127388535,0.9641025641025641,0.9924193199047,972
+RF_with_Class_Weights,football,1.0,1.0,1.0,972
+RF_No_Balancing,womes lax,1.0,1.0,1.0,429
+RF_with_SMOTE,womes lax,1.0,1.0,1.0,429
+RF_with_SMOTEENN,womes lax,0.9523809523809523,0.9534883720930233,0.9688852813852813,429
+RF_with_Class_Weights,womes lax,1.0,1.0,1.0,429
+RF_No_Balancing,mens soccer,1.0,1.0,1.0,321
+RF_with_SMOTE,mens soccer,1.0,1.0,1.0,321
+RF_with_SMOTEENN,mens soccer,0.9565217391304348,0.9692307692307692,0.9989648033126295,321
+RF_with_Class_Weights,mens soccer,1.0,1.0,1.0,321
+RF_No_Balancing,womens soccer,1.0,1.0,1.0,316
+RF_with_SMOTE,womens soccer,1.0,1.0,1.0,316
+RF_with_SMOTEENN,womens soccer,0.88,0.90625,0.9609375,316
+RF_with_Class_Weights,womens soccer,1.0,1.0,1.0,316
+RF_No_Balancing,womens basketball,1.0,1.0,1.0,242
+RF_with_SMOTE,womens basketball,1.0,1.0,1.0,242
+RF_with_SMOTEENN,womens basketball,0.9019607843137255,0.8979591836734694,0.98,242
+RF_with_Class_Weights,womens basketball,1.0,1.0,1.0,242
+RF_No_Balancing,mens lax,1.0,1.0,1.0,215
+RF_with_SMOTE,mens lax,1.0,1.0,1.0,215
+RF_with_SMOTEENN,mens lax,0.9444444444444444,0.9534883720930233,0.9692982456140351,215
+RF_with_Class_Weights,mens lax,1.0,1.0,1.0,215
+RF_No_Balancing,baseball,1.0,1.0,1.0,205
+RF_with_SMOTE,baseball,1.0,1.0,1.0,205
+RF_with_SMOTEENN,baseball,0.8461538461538461,0.9024390243902439,0.8558201058201058,205
+RF_with_Class_Weights,baseball,1.0,1.0,1.0,205
+RF_No_Balancing,mens basketball,1.0,1.0,1.0,144
+RF_with_SMOTE,mens basketball,1.0,1.0,1.0,144
+RF_with_SMOTEENN,mens basketball,0.9,0.9310344827586207,0.845959595959596,144
+RF_with_Class_Weights,mens basketball,1.0,1.0,1.0,144
+RF_No_Balancing,womens volleyball,0.9411764705882353,0.96,0.9705882352941176,124
+RF_with_SMOTE,womens volleyball,0.9411764705882353,0.96,0.9926470588235294,124
+RF_with_SMOTEENN,womens volleyball,0.6,0.68,0.8235294117647058,124
+RF_with_Class_Weights,womens volleyball,0.9411764705882353,0.96,0.9632352941176471,124
+RF_No_Balancing,softball,0.9411764705882353,0.9473684210526315,1.0,94
+RF_with_SMOTE,softball,0.9411764705882353,0.9473684210526315,1.0,94
+RF_with_SMOTEENN,softball,0.9411764705882353,0.9473684210526315,0.8999999999999999,94
+RF_with_Class_Weights,softball,0.9411764705882353,0.9473684210526315,1.0,94
+RF_No_Balancing,track and field,1.0,1.0,1.0,87
+RF_with_SMOTE,track and field,1.0,1.0,1.0,87
+RF_with_SMOTEENN,track and field,0.6,0.7777777777777778,0.6388888888888888,87
+RF_with_Class_Weights,track and field,1.0,1.0,1.0,87
+RF_No_Balancing,tennis,1.0,1.0,1.0,35
+RF_with_SMOTE,tennis,1.0,1.0,1.0,35
+RF_with_SMOTEENN,tennis,0.75,0.7142857142857143,0.625,35
+RF_with_Class_Weights,tennis,1.0,1.0,1.0,35

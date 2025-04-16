@@ -1,2 +1,12 @@
 markitdown
 pandas
+python-dotenv
+sqlalchemy
+pymysql
+matplotlib
+seaborn
+scikit-learn
+imbalanced-learn
+statsmodels
+shap
+tabulate
